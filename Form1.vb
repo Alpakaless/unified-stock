@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub GunaButton1_Click_1(sender As Object, e As EventArgs) Handles GunaButton1.Click
-
+        Form8.Show()
     End Sub
 
     Private Sub Label2_Click_1(sender As Object, e As EventArgs) Handles Label2.Click
