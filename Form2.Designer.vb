@@ -179,7 +179,7 @@ Partial Class Form2
         Me.Controls.Add(Me.GunaButton1)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form2"
+        Me.Text = "Esqueci minha senha"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.GunaCirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
