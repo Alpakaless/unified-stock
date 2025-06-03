@@ -60,7 +60,7 @@ Partial Class Form8
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(109, 53)
+        Me.Label1.Location = New System.Drawing.Point(110, 53)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 24)
         Me.Label1.TabIndex = 15
@@ -72,7 +72,7 @@ Partial Class Form8
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(109, 163)
+        Me.Label2.Location = New System.Drawing.Point(110, 163)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 24)
         Me.Label2.TabIndex = 17
@@ -103,7 +103,7 @@ Partial Class Form8
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(456, 163)
+        Me.Label3.Location = New System.Drawing.Point(450, 163)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 24)
         Me.Label3.TabIndex = 19
@@ -121,7 +121,7 @@ Partial Class Form8
         Me.GunaTextBox3.FocusedForeColor = System.Drawing.Color.Transparent
         Me.GunaTextBox3.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GunaTextBox3.ForeColor = System.Drawing.Color.White
-        Me.GunaTextBox3.Location = New System.Drawing.Point(460, 190)
+        Me.GunaTextBox3.Location = New System.Drawing.Point(454, 190)
         Me.GunaTextBox3.Name = "GunaTextBox3"
         Me.GunaTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.GunaTextBox3.SelectedText = ""
@@ -134,7 +134,7 @@ Partial Class Form8
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(456, 53)
+        Me.Label4.Location = New System.Drawing.Point(450, 53)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 24)
         Me.Label4.TabIndex = 21
@@ -224,6 +224,7 @@ Partial Class Form8
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GunaTextBox1)
         Me.Name = "Form8"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de funcionários"
         Me.ResumeLayout(False)
         Me.PerformLayout()
