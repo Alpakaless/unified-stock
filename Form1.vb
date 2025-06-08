@@ -24,8 +24,32 @@
     End Sub
 
     Private Sub GunaButton1_Click_1(sender As Object, e As EventArgs) Handles GunaButton1.Click
-        Form3.Show()
-        Me.Hide()
+        Dim usuario As String = txtUsuario.Text
+        Dim senha As String = txtSenha.Text
+
+        sql = "Select Tipo FROM funcionarios where Usuario = '" & usuario & "' AND senha = '" & senha & "'"
+        Try
+            If rs.State = 1 Then rs.Close()
+            rs.Open(sql, db, 0, 1)
+
+            If Not rs.EOF Then
+                Dim tipoConta As String = rs.Fields("Tipo").Value.ToString()
+
+                If tipoConta = "ADM" Then
+                    Form3.Show()
+                    Me.Hide()
+                ElseIf tipoConta = "FUNC" Then
+                    Form3.Show()
+                    Me.Hide()
+                End If
+            Else
+                MsgBox("Credenciais inválidas", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
+            End If
+
+            rs.Close()
+        Catch ex As Exception
+            MsgBox("Erro ao tentar logar:" & ex.Message, MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Erro")
+        End Try
     End Sub
 
     Private Sub Label2_Click_1(sender As Object, e As EventArgs) Handles Label2.Click
@@ -36,7 +60,7 @@
 
     End Sub
 
-    Private Sub GunaTextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles GunaTextBox1.TextChanged
+    Private Sub GunaTextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles txtUsuario.TextChanged
 
     End Sub
 
@@ -49,6 +73,6 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        databaseConnect()
     End Sub
 End Class

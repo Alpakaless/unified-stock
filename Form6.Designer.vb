@@ -31,7 +31,14 @@ Partial Class Form6
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.colunaID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colunaNome = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colunaDescricao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colunaValor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colunaQuantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GunaButton3
@@ -175,12 +182,62 @@ Partial Class Form6
         Me.PictureBox1.TabIndex = 29
         Me.PictureBox1.TabStop = False
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colunaID, Me.colunaNome, Me.colunaDescricao, Me.colunaValor, Me.colunaQuantidade})
+        Me.DataGridView1.Location = New System.Drawing.Point(226, 90)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(555, 329)
+        Me.DataGridView1.TabIndex = 38
+        '
+        'colunaID
+        '
+        Me.colunaID.HeaderText = "ID"
+        Me.colunaID.Name = "colunaID"
+        Me.colunaID.ReadOnly = True
+        Me.colunaID.Width = 103
+        '
+        'colunaNome
+        '
+        Me.colunaNome.HeaderText = "Nome"
+        Me.colunaNome.Name = "colunaNome"
+        Me.colunaNome.ReadOnly = True
+        Me.colunaNome.Width = 103
+        '
+        'colunaDescricao
+        '
+        Me.colunaDescricao.HeaderText = "Descrição"
+        Me.colunaDescricao.Name = "colunaDescricao"
+        Me.colunaDescricao.ReadOnly = True
+        Me.colunaDescricao.Width = 103
+        '
+        'colunaValor
+        '
+        Me.colunaValor.HeaderText = "Valor"
+        Me.colunaValor.Name = "colunaValor"
+        Me.colunaValor.ReadOnly = True
+        Me.colunaValor.Width = 103
+        '
+        'colunaQuantidade
+        '
+        Me.colunaQuantidade.HeaderText = "Quantidade"
+        Me.colunaQuantidade.Name = "colunaQuantidade"
+        Me.colunaQuantidade.ReadOnly = True
+        Me.colunaQuantidade.Width = 103
+        '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(804, 451)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GunaButton3)
         Me.Controls.Add(Me.GunaButton2)
         Me.Controls.Add(Me.GunaButton1)
@@ -194,6 +251,7 @@ Partial Class Form6
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Funcionários(ADM)"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -208,4 +266,10 @@ Partial Class Form6
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents colunaID As DataGridViewTextBoxColumn
+    Friend WithEvents colunaNome As DataGridViewTextBoxColumn
+    Friend WithEvents colunaDescricao As DataGridViewTextBoxColumn
+    Friend WithEvents colunaValor As DataGridViewTextBoxColumn
+    Friend WithEvents colunaQuantidade As DataGridViewTextBoxColumn
 End Class
