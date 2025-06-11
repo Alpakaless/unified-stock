@@ -11,12 +11,12 @@ Public Class Form4
 
     Private Sub Label4_Click_1(sender As Object, e As EventArgs) Handles Label4.Click
         Form7.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         Form6.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -75,6 +75,7 @@ Public Class Form4
             databaseConnect()
         End If
         CarregarEstoque()
+        verificarEstoqueBaixo()
         If tipoUsuarioLogado = "FUNC" Then
             Label3.Visible = False
             Label4.Visible = False
@@ -89,5 +90,25 @@ Public Class Form4
         DataGridView1.Columns.Clear()
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.DataSource = dt
+    End Sub
+    Private Sub verificarEstoqueBaixo()
+        Const limiteMinimo As Integer = 5
+        Dim produtosBaixos As New List(Of String)
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            If row.IsNewRow Then Continue For
+            Dim nomeProduto As String = row.Cells("Nome").Value?.ToString()
+            Dim quantidade As Integer = 0
+            If Not IsDBNull(row.Cells("Quantidade").Value) AndAlso
+               Integer.TryParse(row.Cells("Quantidade").Value.ToString(), quantidade) Then
+                If quantidade <= limiteMinimo Then
+                    produtosBaixos.Add($"{nomeProduto} (Qtd: {quantidade})")
+                End If
+            End If
+        Next
+        If produtosBaixos.Count > 0 Then
+            Dim msg As String = "Os seguintes produtos estão com o estoque baixo:" & vbCrLf &
+                                String.Join(vbCrLf, produtosBaixos)
+            MsgBox(msg, MsgBoxStyle.OkOnly, "Aviso de Estoque Baixo")
+        End If
     End Sub
 End Class

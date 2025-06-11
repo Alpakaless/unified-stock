@@ -43,5 +43,9 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         databaseConnect()
     End Sub
+
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) 
+
+    End Sub
 End Class
 

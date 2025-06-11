@@ -170,11 +170,14 @@ Partial Class Form7
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColunaCnpj, Me.ColunaNome, Me.ColunaTelefone, Me.ColunaEmail})
-        Me.DataGridView1.Location = New System.Drawing.Point(226, 110)
+        Me.DataGridView1.Location = New System.Drawing.Point(226, 95)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(555, 309)
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(555, 329)
         Me.DataGridView1.TabIndex = 47
         '
         'ColunaCnpj
@@ -182,6 +185,7 @@ Partial Class Form7
         Me.ColunaCnpj.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ColunaCnpj.HeaderText = "CNPJ"
         Me.ColunaCnpj.Name = "ColunaCnpj"
+        Me.ColunaCnpj.ReadOnly = True
         Me.ColunaCnpj.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'ColunaNome
@@ -189,6 +193,7 @@ Partial Class Form7
         Me.ColunaNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ColunaNome.HeaderText = "Nome"
         Me.ColunaNome.Name = "ColunaNome"
+        Me.ColunaNome.ReadOnly = True
         Me.ColunaNome.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'ColunaTelefone
@@ -196,6 +201,7 @@ Partial Class Form7
         Me.ColunaTelefone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ColunaTelefone.HeaderText = "Telefone"
         Me.ColunaTelefone.Name = "ColunaTelefone"
+        Me.ColunaTelefone.ReadOnly = True
         Me.ColunaTelefone.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'ColunaEmail
@@ -203,6 +209,7 @@ Partial Class Form7
         Me.ColunaEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         Me.ColunaEmail.HeaderText = "Email"
         Me.ColunaEmail.Name = "ColunaEmail"
+        Me.ColunaEmail.ReadOnly = True
         Me.ColunaEmail.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'Form7
