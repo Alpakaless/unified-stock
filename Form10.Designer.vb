@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form9
+Partial Class Form10
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,11 +24,11 @@ Partial Class Form9
     Private Sub InitializeComponent()
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtEmail = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtPreco = New Guna.UI.WinForms.GunaTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtTelefone = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtQuantidade = New Guna.UI.WinForms.GunaTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtCNPJ = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtDescricao = New Guna.UI.WinForms.GunaTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNome = New Guna.UI.WinForms.GunaTextBox()
         Me.SuspendLayout()
@@ -53,7 +53,7 @@ Partial Class Form9
         Me.GunaButton1.OnHoverImage = Nothing
         Me.GunaButton1.OnPressedColor = System.Drawing.Color.Black
         Me.GunaButton1.Size = New System.Drawing.Size(150, 38)
-        Me.GunaButton1.TabIndex = 35
+        Me.GunaButton1.TabIndex = 44
         Me.GunaButton1.Text = "Criar"
         Me.GunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -65,28 +65,28 @@ Partial Class Form9
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(468, 58)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 24)
-        Me.Label4.TabIndex = 33
-        Me.Label4.Text = "Email"
+        Me.Label4.Size = New System.Drawing.Size(69, 24)
+        Me.Label4.TabIndex = 43
+        Me.Label4.Text = "Preço"
         '
-        'txtEmail
+        'txtPreco
         '
-        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtEmail.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtEmail.BorderColor = System.Drawing.Color.Transparent
-        Me.txtEmail.BorderSize = 0
-        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtEmail.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtEmail.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.txtEmail.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.txtEmail.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.ForeColor = System.Drawing.Color.White
-        Me.txtEmail.Location = New System.Drawing.Point(472, 85)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtEmail.SelectedText = ""
-        Me.txtEmail.Size = New System.Drawing.Size(200, 47)
-        Me.txtEmail.TabIndex = 32
+        Me.txtPreco.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtPreco.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtPreco.BorderColor = System.Drawing.Color.Transparent
+        Me.txtPreco.BorderSize = 0
+        Me.txtPreco.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPreco.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtPreco.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtPreco.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtPreco.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPreco.ForeColor = System.Drawing.Color.White
+        Me.txtPreco.Location = New System.Drawing.Point(472, 85)
+        Me.txtPreco.Name = "txtPreco"
+        Me.txtPreco.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPreco.SelectedText = ""
+        Me.txtPreco.Size = New System.Drawing.Size(200, 47)
+        Me.txtPreco.TabIndex = 42
         '
         'Label3
         '
@@ -96,28 +96,28 @@ Partial Class Form9
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(468, 168)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(95, 24)
-        Me.Label3.TabIndex = 31
-        Me.Label3.Text = "Telefone"
+        Me.Label3.Size = New System.Drawing.Size(126, 24)
+        Me.Label3.TabIndex = 41
+        Me.Label3.Text = "Quantidade"
         '
-        'txtTelefone
+        'txtQuantidade
         '
-        Me.txtTelefone.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtTelefone.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtTelefone.BorderColor = System.Drawing.Color.Transparent
-        Me.txtTelefone.BorderSize = 0
-        Me.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtTelefone.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtTelefone.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.txtTelefone.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.txtTelefone.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefone.ForeColor = System.Drawing.Color.White
-        Me.txtTelefone.Location = New System.Drawing.Point(472, 195)
-        Me.txtTelefone.Name = "txtTelefone"
-        Me.txtTelefone.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtTelefone.SelectedText = ""
-        Me.txtTelefone.Size = New System.Drawing.Size(200, 47)
-        Me.txtTelefone.TabIndex = 30
+        Me.txtQuantidade.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtQuantidade.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtQuantidade.BorderColor = System.Drawing.Color.Transparent
+        Me.txtQuantidade.BorderSize = 0
+        Me.txtQuantidade.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtQuantidade.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtQuantidade.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtQuantidade.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtQuantidade.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtQuantidade.ForeColor = System.Drawing.Color.White
+        Me.txtQuantidade.Location = New System.Drawing.Point(472, 195)
+        Me.txtQuantidade.Name = "txtQuantidade"
+        Me.txtQuantidade.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtQuantidade.SelectedText = ""
+        Me.txtQuantidade.Size = New System.Drawing.Size(200, 47)
+        Me.txtQuantidade.TabIndex = 40
         '
         'Label2
         '
@@ -125,30 +125,30 @@ Partial Class Form9
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(124, 168)
+        Me.Label2.Location = New System.Drawing.Point(128, 168)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 24)
-        Me.Label2.TabIndex = 29
-        Me.Label2.Text = "CNPJ"
+        Me.Label2.Size = New System.Drawing.Size(111, 24)
+        Me.Label2.TabIndex = 39
+        Me.Label2.Text = "Descrição"
         '
-        'txtCNPJ
+        'txtDescricao
         '
-        Me.txtCNPJ.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtCNPJ.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtCNPJ.BorderColor = System.Drawing.Color.Transparent
-        Me.txtCNPJ.BorderSize = 0
-        Me.txtCNPJ.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtCNPJ.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.txtCNPJ.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.txtCNPJ.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.txtCNPJ.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCNPJ.ForeColor = System.Drawing.Color.White
-        Me.txtCNPJ.Location = New System.Drawing.Point(128, 195)
-        Me.txtCNPJ.Name = "txtCNPJ"
-        Me.txtCNPJ.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCNPJ.SelectedText = ""
-        Me.txtCNPJ.Size = New System.Drawing.Size(200, 47)
-        Me.txtCNPJ.TabIndex = 28
+        Me.txtDescricao.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtDescricao.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtDescricao.BorderColor = System.Drawing.Color.Transparent
+        Me.txtDescricao.BorderSize = 0
+        Me.txtDescricao.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtDescricao.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtDescricao.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtDescricao.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtDescricao.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescricao.ForeColor = System.Drawing.Color.White
+        Me.txtDescricao.Location = New System.Drawing.Point(128, 195)
+        Me.txtDescricao.Name = "txtDescricao"
+        Me.txtDescricao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtDescricao.SelectedText = ""
+        Me.txtDescricao.Size = New System.Drawing.Size(200, 47)
+        Me.txtDescricao.TabIndex = 38
         '
         'Label1
         '
@@ -156,10 +156,10 @@ Partial Class Form9
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(124, 58)
+        Me.Label1.Location = New System.Drawing.Point(128, 58)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(68, 24)
-        Me.Label1.TabIndex = 27
+        Me.Label1.TabIndex = 37
         Me.Label1.Text = "Nome"
         '
         'txtNome
@@ -179,9 +179,9 @@ Partial Class Form9
         Me.txtNome.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtNome.SelectedText = ""
         Me.txtNome.Size = New System.Drawing.Size(200, 47)
-        Me.txtNome.TabIndex = 26
+        Me.txtNome.TabIndex = 36
         '
-        'Form9
+        'Form10
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -189,27 +189,27 @@ Partial Class Form9
         Me.ClientSize = New System.Drawing.Size(804, 451)
         Me.Controls.Add(Me.GunaButton1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtPreco)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txtTelefone)
+        Me.Controls.Add(Me.txtQuantidade)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtCNPJ)
+        Me.Controls.Add(Me.txtDescricao)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtNome)
-        Me.Name = "Form9"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Cadastro de Fornecedores"
+        Me.Name = "Form10"
+        Me.Text = "Cadastro de produtos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtEmail As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtPreco As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtTelefone As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtQuantidade As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtCNPJ As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtDescricao As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtNome As Guna.UI.WinForms.GunaTextBox
 End Class

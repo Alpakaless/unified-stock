@@ -2,6 +2,7 @@
     Public db As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Public sql, cont As String
+    Public tipoUsuarioLogado As String
 
     Sub databaseConnect()
         Try
