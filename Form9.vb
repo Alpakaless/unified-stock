@@ -10,10 +10,10 @@
             sql = "SELECT * FROM fornecedores WHERE CNPJ = '" & cnpjSelecionado & "'"
             rs.Open(sql, db, 1, 1)
             If Not rs.EOF Then
-                txtNome.Text = rs("nomefornecedor").Value
-                txtEmail.Text = rs("emailfornecedor").Value
-                txtCNPJ.Text = rs("cnpj").Value
-                txtTelefone.Text = rs("telfornecedor").Value
+                txtNome.Text = rs("Nome").Value
+                txtEmail.Text = rs("Email").Value
+                txtCNPJ.Text = rs("CNPJ").Value
+                txtTelefone.Text = rs("Telefone").Value
                 txtCNPJ.Enabled = False
             End If
             rs.Close()
@@ -30,9 +30,11 @@
             MsgBox("O CNPJ deve conter apenas números.")
             Exit Sub
         End If
-
+        If txtCNPJ.Text.Length <> 14 Then
+            MsgBox("Insira um CNPJ válido")
+            Exit Sub
+        End If
         If Not modoEdicao Then
-            ' Verifica se CNPJ já existe
             sql = "SELECT * FROM fornecedores WHERE CNPJ = '" & txtCNPJ.Text & "'"
             rs.Open(sql, db, 1, 1)
             If Not rs.EOF Then
@@ -44,9 +46,9 @@
         End If
 
         If modoEdicao Then
-            sql = "UPDATE fornecedores SET nomefornecedor = '" & txtNome.Text & "', emailfornecedor = '" & txtEmail.Text & "', telfornecedor = '" & txtTelefone.Text & "' WHERE cnpj = '" & cnpjSelecionado & "'"
+            sql = "UPDATE fornecedores SET Nome = '" & txtNome.Text & "', Email = '" & txtEmail.Text & "', Telefone = '" & txtTelefone.Text & "' WHERE CPNJ = '" & cnpjSelecionado & "'"
         Else
-            sql = "INSERT INTO fornecedores (cnpj, nomefornecedor, emailfornecedor, telfornecedor) VALUES ('" & txtCNPJ.Text & "', '" & txtNome.Text & "', '" & txtEmail.Text & "', '" & txtTelefone.Text & "')"
+            sql = "INSERT INTO fornecedores (cnpj, Nome, Email, Telefone) VALUES ('" & txtCNPJ.Text & "', '" & txtNome.Text & "', '" & txtEmail.Text & "', '" & txtTelefone.Text & "')"
         End If
 
         Try

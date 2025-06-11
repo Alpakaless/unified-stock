@@ -1,18 +1,18 @@
 ﻿Public Class Form7
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Form4.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         Form6.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
         Form1.LimparLogin()
         Form1.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
@@ -54,7 +54,6 @@
             MsgBox("Selecione um fornecedor para remover.")
             Exit Sub
         End If
-
         Dim cnpj As String = DataGridView1.SelectedRows(0).Cells("CNPJ").Value.ToString()
         If MsgBox("Deseja realmente excluir este fornecedor?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
             sql = "DELETE FROM fornecedores WHERE CNPJ = '" & cnpj & "'"

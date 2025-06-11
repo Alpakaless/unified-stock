@@ -29,6 +29,10 @@
             MsgBox("O CPF deve conter apenas números.")
             Exit Sub
         End If
+        If txtCPF.Text.Length <> 11 Then
+            MsgBox("Insira um CPF válido")
+            Exit Sub
+        End If
         If db Is Nothing OrElse db.State <> 1 Then
             databaseConnect()
         End If
