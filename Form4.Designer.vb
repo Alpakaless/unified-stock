@@ -26,7 +26,6 @@ Partial Class Form4
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.GunaButton2 = New Guna.UI.WinForms.GunaButton()
@@ -59,7 +58,7 @@ Partial Class Form4
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(40, 230)
+        Me.Label4.Location = New System.Drawing.Point(40, 170)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 19)
         Me.Label4.TabIndex = 24
@@ -83,23 +82,11 @@ Partial Class Form4
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(40, 170)
+        Me.Label3.Location = New System.Drawing.Point(40, 110)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(101, 19)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Funcionário"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(40, 110)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 19)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Caixa"
         '
         'PictureBox1
         '
@@ -186,7 +173,7 @@ Partial Class Form4
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colunaID, Me.colunaNome, Me.colunaDescricao, Me.colunaValor, Me.colunaQuantidade})
@@ -200,30 +187,35 @@ Partial Class Form4
         '
         Me.colunaID.HeaderText = "ID"
         Me.colunaID.Name = "colunaID"
+        Me.colunaID.ReadOnly = True
         Me.colunaID.Width = 103
         '
         'colunaNome
         '
         Me.colunaNome.HeaderText = "Nome"
         Me.colunaNome.Name = "colunaNome"
+        Me.colunaNome.ReadOnly = True
         Me.colunaNome.Width = 103
         '
         'colunaDescricao
         '
         Me.colunaDescricao.HeaderText = "Descrição"
         Me.colunaDescricao.Name = "colunaDescricao"
+        Me.colunaDescricao.ReadOnly = True
         Me.colunaDescricao.Width = 103
         '
         'colunaValor
         '
         Me.colunaValor.HeaderText = "Valor"
         Me.colunaValor.Name = "colunaValor"
+        Me.colunaValor.ReadOnly = True
         Me.colunaValor.Width = 103
         '
         'colunaQuantidade
         '
         Me.colunaQuantidade.HeaderText = "Quantidade"
         Me.colunaQuantidade.Name = "colunaQuantidade"
+        Me.colunaQuantidade.ReadOnly = True
         Me.colunaQuantidade.Width = 103
         '
         'Form4
@@ -240,7 +232,6 @@ Partial Class Form4
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form4"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -255,7 +246,6 @@ Partial Class Form4
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaButton2 As Guna.UI.WinForms.GunaButton

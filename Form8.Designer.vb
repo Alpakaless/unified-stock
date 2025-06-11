@@ -22,37 +22,37 @@ Partial Class Form8
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtNome = New Guna.UI.WinForms.GunaTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtCPF = New Guna.UI.WinForms.GunaTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.GunaTextBox3 = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtSenha = New Guna.UI.WinForms.GunaTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.GunaTextBox4 = New Guna.UI.WinForms.GunaTextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtEmail = New Guna.UI.WinForms.GunaTextBox()
+        Me.cmbTipo = New System.Windows.Forms.ComboBox()
         Me.GunaButton1 = New Guna.UI.WinForms.GunaButton()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'GunaTextBox1
+        'txtNome
         '
-        Me.GunaTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox1.BorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox1.BorderSize = 0
-        Me.GunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox1.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox1.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox1.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox1.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaTextBox1.ForeColor = System.Drawing.Color.White
-        Me.GunaTextBox1.Location = New System.Drawing.Point(110, 80)
-        Me.GunaTextBox1.Name = "GunaTextBox1"
-        Me.GunaTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox1.SelectedText = ""
-        Me.GunaTextBox1.Size = New System.Drawing.Size(200, 47)
-        Me.GunaTextBox1.TabIndex = 14
+        Me.txtNome.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtNome.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtNome.BorderColor = System.Drawing.Color.Transparent
+        Me.txtNome.BorderSize = 0
+        Me.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtNome.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtNome.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtNome.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtNome.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNome.ForeColor = System.Drawing.Color.White
+        Me.txtNome.Location = New System.Drawing.Point(110, 80)
+        Me.txtNome.Name = "txtNome"
+        Me.txtNome.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNome.SelectedText = ""
+        Me.txtNome.Size = New System.Drawing.Size(200, 47)
+        Me.txtNome.TabIndex = 14
         '
         'Label1
         '
@@ -78,24 +78,24 @@ Partial Class Form8
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "CPF"
         '
-        'GunaTextBox2
+        'txtCPF
         '
-        Me.GunaTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox2.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox2.BorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox2.BorderSize = 0
-        Me.GunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox2.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox2.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox2.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox2.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaTextBox2.ForeColor = System.Drawing.Color.White
-        Me.GunaTextBox2.Location = New System.Drawing.Point(110, 190)
-        Me.GunaTextBox2.Name = "GunaTextBox2"
-        Me.GunaTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox2.SelectedText = ""
-        Me.GunaTextBox2.Size = New System.Drawing.Size(200, 47)
-        Me.GunaTextBox2.TabIndex = 16
+        Me.txtCPF.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtCPF.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtCPF.BorderColor = System.Drawing.Color.Transparent
+        Me.txtCPF.BorderSize = 0
+        Me.txtCPF.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtCPF.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtCPF.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtCPF.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtCPF.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCPF.ForeColor = System.Drawing.Color.White
+        Me.txtCPF.Location = New System.Drawing.Point(110, 190)
+        Me.txtCPF.Name = "txtCPF"
+        Me.txtCPF.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCPF.SelectedText = ""
+        Me.txtCPF.Size = New System.Drawing.Size(200, 47)
+        Me.txtCPF.TabIndex = 16
         '
         'Label3
         '
@@ -109,24 +109,24 @@ Partial Class Form8
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "Senha"
         '
-        'GunaTextBox3
+        'txtSenha
         '
-        Me.GunaTextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox3.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox3.BorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox3.BorderSize = 0
-        Me.GunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox3.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox3.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox3.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox3.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaTextBox3.ForeColor = System.Drawing.Color.White
-        Me.GunaTextBox3.Location = New System.Drawing.Point(454, 190)
-        Me.GunaTextBox3.Name = "GunaTextBox3"
-        Me.GunaTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox3.SelectedText = ""
-        Me.GunaTextBox3.Size = New System.Drawing.Size(200, 47)
-        Me.GunaTextBox3.TabIndex = 18
+        Me.txtSenha.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtSenha.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtSenha.BorderColor = System.Drawing.Color.Transparent
+        Me.txtSenha.BorderSize = 0
+        Me.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtSenha.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtSenha.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtSenha.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtSenha.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSenha.ForeColor = System.Drawing.Color.White
+        Me.txtSenha.Location = New System.Drawing.Point(454, 190)
+        Me.txtSenha.Name = "txtSenha"
+        Me.txtSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtSenha.SelectedText = ""
+        Me.txtSenha.Size = New System.Drawing.Size(200, 47)
+        Me.txtSenha.TabIndex = 18
         '
         'Label4
         '
@@ -140,35 +140,35 @@ Partial Class Form8
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "Email"
         '
-        'GunaTextBox4
+        'txtEmail
         '
-        Me.GunaTextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox4.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox4.BorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox4.BorderSize = 0
-        Me.GunaTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox4.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.GunaTextBox4.FocusedBorderColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox4.FocusedForeColor = System.Drawing.Color.Transparent
-        Me.GunaTextBox4.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaTextBox4.ForeColor = System.Drawing.Color.White
-        Me.GunaTextBox4.Location = New System.Drawing.Point(454, 80)
-        Me.GunaTextBox4.Name = "GunaTextBox4"
-        Me.GunaTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox4.SelectedText = ""
-        Me.GunaTextBox4.Size = New System.Drawing.Size(200, 47)
-        Me.GunaTextBox4.TabIndex = 20
+        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtEmail.BaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtEmail.BorderColor = System.Drawing.Color.Transparent
+        Me.txtEmail.BorderSize = 0
+        Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtEmail.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.txtEmail.FocusedBorderColor = System.Drawing.Color.Transparent
+        Me.txtEmail.FocusedForeColor = System.Drawing.Color.Transparent
+        Me.txtEmail.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.ForeColor = System.Drawing.Color.White
+        Me.txtEmail.Location = New System.Drawing.Point(454, 80)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtEmail.SelectedText = ""
+        Me.txtEmail.Size = New System.Drawing.Size(200, 47)
+        Me.txtEmail.TabIndex = 20
         '
-        'ComboBox1
+        'cmbTipo
         '
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Funcionário", "ADM"})
-        Me.ComboBox1.Location = New System.Drawing.Point(110, 281)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 24)
-        Me.ComboBox1.TabIndex = 23
+        Me.cmbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbTipo.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTipo.FormattingEnabled = True
+        Me.cmbTipo.Items.AddRange(New Object() {"FUNC", "ADM"})
+        Me.cmbTipo.Location = New System.Drawing.Point(110, 281)
+        Me.cmbTipo.Name = "cmbTipo"
+        Me.cmbTipo.Size = New System.Drawing.Size(200, 24)
+        Me.cmbTipo.TabIndex = 23
         '
         'GunaButton1
         '
@@ -214,15 +214,15 @@ Partial Class Form8
         Me.ClientSize = New System.Drawing.Size(804, 451)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.GunaButton1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbTipo)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.GunaTextBox4)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.GunaTextBox3)
+        Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.GunaTextBox2)
+        Me.Controls.Add(Me.txtCPF)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GunaTextBox1)
+        Me.Controls.Add(Me.txtNome)
         Me.Name = "Form8"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cadastro de funcionários"
@@ -231,15 +231,15 @@ Partial Class Form8
 
     End Sub
 
-    Friend WithEvents GunaTextBox1 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtNome As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents GunaTextBox2 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtCPF As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents GunaTextBox3 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents txtSenha As Guna.UI.WinForms.GunaTextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents GunaTextBox4 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtEmail As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents cmbTipo As ComboBox
     Friend WithEvents GunaButton1 As Guna.UI.WinForms.GunaButton
     Friend WithEvents Label5 As Label
 End Class

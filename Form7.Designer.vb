@@ -29,14 +29,12 @@ Partial Class Form7
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.colunaID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colunaNome = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colunaDescricao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colunaValor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colunaQuantidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColunaCnpj = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColunaNome = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColunaTelefone = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColunaEmail = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -131,7 +129,7 @@ Partial Class Form7
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(40, 230)
+        Me.Label4.Location = New System.Drawing.Point(40, 170)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 19)
         Me.Label4.TabIndex = 42
@@ -155,23 +153,11 @@ Partial Class Form7
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(40, 170)
+        Me.Label3.Location = New System.Drawing.Point(40, 110)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(101, 19)
         Me.Label3.TabIndex = 40
         Me.Label3.Text = "Funcionário"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(31, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(40, 110)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 19)
-        Me.Label6.TabIndex = 39
-        Me.Label6.Text = "Caixa"
         '
         'PictureBox1
         '
@@ -184,52 +170,40 @@ Partial Class Form7
         '
         'DataGridView1
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colunaID, Me.colunaNome, Me.colunaDescricao, Me.colunaValor, Me.colunaQuantidade})
-        Me.DataGridView1.Location = New System.Drawing.Point(226, 90)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColunaCnpj, Me.ColunaNome, Me.ColunaTelefone, Me.ColunaEmail})
+        Me.DataGridView1.Location = New System.Drawing.Point(226, 110)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(555, 329)
+        Me.DataGridView1.Size = New System.Drawing.Size(555, 309)
         Me.DataGridView1.TabIndex = 47
         '
-        'colunaID
+        'ColunaCnpj
         '
-        Me.colunaID.HeaderText = "ID"
-        Me.colunaID.Name = "colunaID"
-        Me.colunaID.ReadOnly = True
-        Me.colunaID.Width = 103
+        Me.ColunaCnpj.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ColunaCnpj.HeaderText = "CNPJ"
+        Me.ColunaCnpj.Name = "ColunaCnpj"
+        Me.ColunaCnpj.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'colunaNome
+        'ColunaNome
         '
-        Me.colunaNome.HeaderText = "Nome"
-        Me.colunaNome.Name = "colunaNome"
-        Me.colunaNome.ReadOnly = True
-        Me.colunaNome.Width = 103
+        Me.ColunaNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ColunaNome.HeaderText = "Nome"
+        Me.ColunaNome.Name = "ColunaNome"
+        Me.ColunaNome.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'colunaDescricao
+        'ColunaTelefone
         '
-        Me.colunaDescricao.HeaderText = "Descrição"
-        Me.colunaDescricao.Name = "colunaDescricao"
-        Me.colunaDescricao.ReadOnly = True
-        Me.colunaDescricao.Width = 103
+        Me.ColunaTelefone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ColunaTelefone.HeaderText = "Telefone"
+        Me.ColunaTelefone.Name = "ColunaTelefone"
+        Me.ColunaTelefone.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
-        'colunaValor
+        'ColunaEmail
         '
-        Me.colunaValor.HeaderText = "Valor"
-        Me.colunaValor.Name = "colunaValor"
-        Me.colunaValor.ReadOnly = True
-        Me.colunaValor.Width = 103
-        '
-        'colunaQuantidade
-        '
-        Me.colunaQuantidade.HeaderText = "Quantidade"
-        Me.colunaQuantidade.Name = "colunaQuantidade"
-        Me.colunaQuantidade.ReadOnly = True
-        Me.colunaQuantidade.Width = 103
+        Me.ColunaEmail.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ColunaEmail.HeaderText = "Email"
+        Me.ColunaEmail.Name = "ColunaEmail"
+        Me.ColunaEmail.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
         'Form7
         '
@@ -245,7 +219,6 @@ Partial Class Form7
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form7"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -264,12 +237,10 @@ Partial Class Form7
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents colunaID As DataGridViewTextBoxColumn
-    Friend WithEvents colunaNome As DataGridViewTextBoxColumn
-    Friend WithEvents colunaDescricao As DataGridViewTextBoxColumn
-    Friend WithEvents colunaValor As DataGridViewTextBoxColumn
-    Friend WithEvents colunaQuantidade As DataGridViewTextBoxColumn
+    Friend WithEvents ColunaCnpj As DataGridViewTextBoxColumn
+    Friend WithEvents ColunaNome As DataGridViewTextBoxColumn
+    Friend WithEvents ColunaTelefone As DataGridViewTextBoxColumn
+    Friend WithEvents ColunaEmail As DataGridViewTextBoxColumn
 End Class
